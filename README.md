@@ -44,9 +44,9 @@ api.1sapp.com
 [rewrite_local]
 
 # [商店版] QuanX v1.0.6-build194 及更早版本
-^https:\/\/api\.1sapp\.com\/sign\/info? url script-request-header qtt.cookie.js
-^https:\/\/api\.1sapp\.com\/content\/readV2? url script-request-header qtt.cookie.js
-^https:\/\/api\.1sapp\.com\/x\/feed\/getReward? url script-request-header qtt.cookie.js
+^https:\/\/api\.1sapp\.com\/sign\/info? url script-request-header https://raw.githubusercontent.com/sss1016/qtt/main/qtt.cookie.js
+^https:\/\/api\.1sapp\.com\/content\/readV2? url script-request-header https://raw.githubusercontent.com/sss1016/qtt/main/qtt.cookie.js
+^https:\/\/api\.1sapp\.com\/x\/feed\/getReward? url script-request-header https://raw.githubusercontent.com/sss1016/qtt/main/qtt.cookie.js
 # [TestFlight] QuanX v1.0.6-build195 及以后版本
 ^https:\/\/api\.1sapp\.com\/sign\/info? url script-request-header https://raw.githubusercontent.com/sss1016/qtt/main/qtt.cookie.js
 ^https:\/\/api\.1sapp\.com\/content\/readV2? url script-request-header https://raw.githubusercontent.com/sss1016/qtt/main/qtt.js
