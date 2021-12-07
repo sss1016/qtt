@@ -21,23 +21,13 @@
 > 2020.04.19 添加睡觉领金币
 
 > 2020.04.22 添加幸运转盘额外奖励
-## 配置 (Surge)
-
-```properties
-[MITM]
-api.1sapp.com
-
-[Script]
-http-request ^https:\/\/api\.1sapp\.com\/sign\/info? script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/qtt/qtt.cookie.js
-http-request ^https:\/\/api\.1sapp\.com\/content\/readV2? script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/qtt/qtt.cookie.js
-http-request ^https:\/\/api\.1sapp\.com\/x\/feed\/getReward? script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/qtt/qtt.cookie.js
-
-cron "10 0 0 * * *" script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/qtt/qtt.js
-```
 
 ## 配置 (QuanX)
 
 ```properties
+
+https://raw.githubusercontent.com/sss1016/qtt/main/qtt.js
+
 [MITM]
 api.1sapp.com
 
@@ -55,6 +45,22 @@ api.1sapp.com
 [task_local]
 1 0 * * * qtt.js
 ```
+
+## 配置 (Surge)
+
+```properties
+[MITM]
+api.1sapp.com
+
+[Script]
+http-request ^https:\/\/api\.1sapp\.com\/sign\/info? script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/qtt/qtt.cookie.js
+http-request ^https:\/\/api\.1sapp\.com\/content\/readV2? script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/qtt/qtt.cookie.js
+http-request ^https:\/\/api\.1sapp\.com\/x\/feed\/getReward? script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/qtt/qtt.cookie.js
+
+cron "10 0 0 * * *" script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/qtt/qtt.js
+```
+
+
 
 ## 说明
 
